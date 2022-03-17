@@ -4,7 +4,6 @@ import {futureProductData} from "./productData";
 import {Product} from "./product";
 
 export function FutureProduct(): JSX.Element {
-    // @ts-ignore
     return (
         <div className="future-products">
             <h1 className="future-products__title">Featured products</h1>
