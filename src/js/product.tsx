@@ -10,7 +10,6 @@ export type productType = {
 };
 
 export function Product({title, underTitle, url, img, description}: productType): JSX.Element {
-    // @ts-ignore
     const imgUrl = new URL(`${img}`, import.meta.url);
     return (
         <div className="product">
