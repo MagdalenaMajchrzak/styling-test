@@ -1,0 +1,35 @@
+{
+  "name": "teststyling",
+  "source": "src/index.html",
+  "version": "0.0.1",
+    
+  "description": "small project with styling example",
+  "keywords": "",
+  "license": "",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "author": "Magdalena Majchrzak",
+  "scripts": {
+    "start": "npx parcel src/index.html",
+    "watch": "parcel watch",
+    "build": "parcel build src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass:lint": "sass-lint src/scss/*.scss -v -q"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/transformer-sass": "^2.3.2",
+    "@parcel/transformer-webmanifest": "^2.3.2",
+    "parcel": "^2.3.2",
+    "querystring-es3": "^0.2.1",
+    "sass": "^1.49.9",
+    "sass-lint": "^1.13.1",
+    "url": "^0.11.0"
+  },
+  "dependencies": {
+    "@types/react": "^17.0.40",
+    "@types/react-dom": "^17.0.13",
+    "eslint": "^8.11.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

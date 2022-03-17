@@ -1,0 +1,71 @@
+@import '_breakpoints';
+@import '_colors';
+
+.future-products {
+    &__title {
+        color: $header-color;
+        font-weight: 900;
+        @media screen and (max-width: $md) {
+            font-size: 32px;
+            line-height: 35px;
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: $md) {
+            margin-bottom: 54px;
+        }
+        @media screen and (min-width: $md) and (max-width: $xl) {
+            font-size: 48px;
+            line-height: 51px;
+        }
+        @media screen and (min-width: $xl) {
+            font-size: 60px;
+            line-height: 63px;
+        }
+    }
+
+    &__container {
+        @media screen and (max-width: $md) {
+            padding-bottom: 134px;
+        }
+        @media screen and (min-width: $md) and (max-width: $xl) {
+            display: block;
+            padding-bottom: 143px;
+        }
+        @media screen and (min-width: $xl) {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 355px;
+        }
+    }
+
+    &__item {
+        @media screen and (max-width: $xl) {
+            border-bottom: 1px solid $border-color;
+            padding-bottom: 52px;
+            margin-bottom: 40px;
+        }
+
+        @media screen and (max-width: $md) {
+            padding-bottom: 41px;
+        }
+
+        &:last-of-type {
+            border: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &::after {
+        @media screen and (min-width: $xl) {
+            content: '';
+            margin-bottom: 123px;
+            width: 354px;
+            height: 1px;
+            border-bottom: 1px solid $border-color;
+            display: block;
+        }
+    }
+}
+
+

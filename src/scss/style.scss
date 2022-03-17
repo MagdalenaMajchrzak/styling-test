@@ -1,0 +1,27 @@
+@import '_colors';
+@import '_breakpoints';
+@import '_fonts.scss';
+@import '_spacing.scss';
+@import '_reboot.scss';
+
+.wrapper {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
+    @media screen and (max-width: $md) {
+        padding-top: 48px;
+    }
+    @media screen and (min-width: $md) and (max-width: $xl) {
+        padding-top: 40px;
+    }
+    @media screen and (min-width: $xl) {
+        max-width: 1520px;
+        padding-top: 90px;
+    }
+}
+
+h2 {
+
+}
