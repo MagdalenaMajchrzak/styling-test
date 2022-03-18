@@ -12,8 +12,8 @@ export type productType = {
 export function Product({title, underTitle, url, img, description}: productType): JSX.Element {
     const imgUrl = new URL(`${img}`, import.meta.url);
     return (
-        <div className="product">
-            <figure style={{backgroundImage: `url("${imgUrl}")`}} className="product__img"/>
+        <article className="product">
+            <div style={{backgroundImage: `url("${imgUrl}")`}} className="product__img"/>
             <div className="product__body">
                 <h3 className="product__title">
                     {title}
@@ -26,6 +26,6 @@ export function Product({title, underTitle, url, img, description}: productType)
                 </p>
                 <a href={url} className="product__link">Les mer om Magi...</a>
             </div>
-        </div>
+        </article>
     )
 }
